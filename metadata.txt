@@ -1,0 +1,29 @@
+[general]
+# UTF-8 and CR LF important!
+
+# name: name in QGIS repository window
+name=Test QGIS Plugin - QGIS Crash with XML
+
+# plugin icon in QGIS repository window
+icon=
+
+# qgisMinimumVersion: minimum compatible QGIS version number
+qgisMinimumVersion=3.22.16
+qgisMaximumVersion=3.34.99
+
+# some default plugin information
+description=TEST
+version=1.0
+author=
+email=
+
+about=TEST
+
+
+tags=
+
+homepage=
+category=Plugins
+
+experimental=True
+deprecated=False

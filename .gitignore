@@ -1,0 +1,15 @@
+
+*/*/*/__pycache__/
+*/*/__pycache__/
+*/__pycache__/
+__pycache__/
+*.pyc
+.idea/
+*.gpkg*
+*.bak
+/.vscode/
+*.bat
+*_generated_ui.py
+*.env
+copy_and_compile_plugin-error.log
+copy_and_compile_plugin-output.log
