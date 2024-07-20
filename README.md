@@ -191,4 +191,81 @@ Kernel Version: 10.0.22631
 
 ```
 
+#### QGIS 3.38
+```
+Python Stack Trace
+Windows fatal exception: access violation
+
+Current thread 0x00006e5c (most recent call first):
+  File "C:\Users/felix/AppData/Roaming/QGIS/QGIS3\profiles\default/python/plugins\test_qgis_plugin_qgis_crash_with_xml\tests\test_qgis.py", line 17 in test_lxml
+    el = Element("test")
+  File "C:\Users/felix/AppData/Roaming/QGIS/QGIS3\profiles\default/python/plugins\test_qgis_plugin_qgis_crash_with_xml\__init__.py", line 63 in run_lxml
+    test_qgis.test_lxml()
+
+
+Stack Trace
+
+
+RtlpWaitOnCriticalSection :
+RtlpEnterCriticalSectionContended :
+RtlEnterCriticalSection :
+xmlDictReference :
+PyObject_Vectorcall :
+PyObject_Vectorcall :
+PyEval_EvalFrameDefault :
+PyFunction_Vectorcall :
+Py_hashtable_compare_direct :
+PyObject_Call :
+PyObject_Call :
+PyInit_QtCore :
+PyInit_QtCore :
+PyInit_QtCore :
+PyInit_QtCore :
+QObject::qt_static_metacall :
+QAbstractButton::clicked :
+QAbstractButton::click :
+QAbstractButton::mouseReleaseEvent :
+PyInit_QtWidgets :
+QWidget::event :
+PyInit_QtWidgets :
+QApplicationPrivate::notify_helper :
+QApplication::notify :
+QgsApplication::notify :
+QCoreApplication::notifyInternal2 :
+QApplicationPrivate::sendMouseEvent :
+QSizePolicy::QSizePolicy :
+QSizePolicy::QSizePolicy :
+QApplicationPrivate::notify_helper :
+QApplication::notify :
+QgsApplication::notify :
+QCoreApplication::notifyInternal2 :
+QGuiApplicationPrivate::processMouseEvent :
+QWindowSystemInterface::sendWindowSystemEvents :
+QEventDispatcherWin32::processEvents :
+qt_plugin_query_metadata :
+QEventLoop::exec :
+QCoreApplication::exec :
+main :
+BaseThreadInitThunk :
+RtlUserThreadStart :
+
+
+
+
+QGIS Info
+QGIS Version: 3.38.0-Grenoble
+QGIS code revision: 37aa6188bc
+Compiled against Qt: 5.15.13
+Running against Qt: 5.15.13
+Compiled against GDAL: 3.9.0
+Running against GDAL: 3.9.0
+
+
+
+System Info
+CPU Type: x86_64
+Kernel Type: winnt
+Kernel Version: 10.0.22631
+```
+
 ### uh-oh `el = Element("test")` from the `lxml` package

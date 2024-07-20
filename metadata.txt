@@ -9,7 +9,7 @@ icon=
 
 # qgisMinimumVersion: minimum compatible QGIS version number
 qgisMinimumVersion=3.22.16
-qgisMaximumVersion=3.34.99
+qgisMaximumVersion=3.38.99
 
 # some default plugin information
 description=TEST
